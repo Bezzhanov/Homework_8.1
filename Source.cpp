@@ -2,7 +2,7 @@
 #include <exception>
 
 int function(std::string str, int forbidden_length) {
-	if (str.length() >= forbidden_length)
+	if (str.length() <= forbidden_length)
 		throw std::length_error("Вы ввели слово запретной длины! До свидания");
 	else {
 		return str.length();
